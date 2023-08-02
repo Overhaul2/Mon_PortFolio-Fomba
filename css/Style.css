@@ -527,12 +527,15 @@ span
         width: 100%;
     }
 }
-@media (max-width: 365px){
+@media (max-width: 375px){
     .home-img img{
         width: 90vw;
     }
     .about-img img {
         width: 90vw;
+    }
+    .about P {
+        width: 70vw;
     }
     .footer{
         flex-direction: column-reverse;
@@ -543,3 +546,120 @@ span
     }
 
 }
+
+
+
+
+
+/* Mettez ici les styles CSS communs pour toutes les tailles d'écran */
+
+/* Media query pour les écrans de 991px ou moins */
+/* @media (max-width: 991px){
+    header{
+        padding: 2rem 3%;
+    }
+    section{
+        padding: 10rem 3% 2rem;
+    }
+    .services{
+        padding-bottom: 7rem;
+    }
+    .contact {
+        min-height: auto;
+    }
+    footer{
+        padding: 2rem 3%;
+    }
+    .services{
+        padding-bottom: 7rem;
+    }
+} */
+
+/* Media query pour les écrans de 768px ou moins */
+/* @media (max-width: 768px){
+    #menu-icon {
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: 1rem solid rgba(0,0,0,.2);
+        box-shadow: 0.5rem 1rem rgba(0,0,0,.2);
+        display: none;
+    }
+    .navbar.active{
+        display: block;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    .home {
+        flex-direction: column;
+    }
+    .home-content h3 {
+        font-size: 2.6rem;
+    }
+    .home-content h1 {
+        font-size: 5rem;
+    }
+    .home-img img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    .about img{
+        flex-direction: column-reverse;
+        width: 70VW;
+        margin-top: 4rem;
+    }
+    .services h2{
+        margin-bottom: 3rem;
+    }
+    .portfolio h2 {
+        margin-bottom: 2rem;
+    }
+    .portfolio-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+} */
+
+/* Media query pour les écrans de 617px ou moins */
+/* @media (max-width: 617px) {
+    .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+} */
+
+/* Media query pour les écrans de 450px ou moins */
+/* @media (max-width: 450px) {
+    .contact form input {
+        width: 100%;
+    }
+} */
+
+/* Media query pour les écrans de 375px ou moins */
+/* @media (max-width: 375px){
+    .home-img img{
+        width: 90vw;
+    }
+    .about-img img {
+        width: 90vw;
+    }
+    .about p {
+        width: 70vw;
+    }
+    .footer{
+        flex-direction: column-reverse;
+    }
+    .footer p{
+        align-items: center;
+        margin-top: 2rem;
+    }
+} */
+
+/* Ajoutez ici d'autres media queries si nécessaire pour des tailles d'écran spécifiques */
