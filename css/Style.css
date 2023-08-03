@@ -365,10 +365,22 @@ span
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 5rem;
-    height: 5rem;
+    width: 7rem;
+    height: 7rem;
     background: var(--tex-color);
     border-radius: 50%;
+}
+.portfolio-layer a .bx-link-external
+{
+    font-size: 5rem;
+    color: var(--bg-color);
+}
+
+   /* SECTION CONTACT  */
+
+.contact
+{
+    background: var(--second-bg-color);
 }
 .contact h2
 {
@@ -394,7 +406,7 @@ span
     font-size: 1.6rem;
     padding: 1.5rem;
     color: var(--tex-color);
-    background: var(--second-bg-color);
+    background: var(--bg-color);
     border-radius: 2.8rem;
     margin: .7rem 0;
 }
@@ -442,6 +454,169 @@ span
     font-size: 2.4rem;
     color: var(--second-bg-color);
 }
+
+/* SECTION MES COMPETANCE */
+.skills
+{
+    background: var(--bg-color);
+}
+.skills-main
+{
+    width: 100%;display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 30px;
+    column-gap: 50px;
+}
+.skills-bar
+{
+    margin-bottom: 2.3rem;
+     
+}
+.skills-main h3
+{
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    text-align: center;
+
+}
+.skills-left .skills-bar .skills-info
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px ;
+}
+.skills-left .skills-bar .bar
+{
+    width: 100%;
+    height: 10px;
+    background: var(--second-bg-color);
+    border-radius: 25px;
+    margin-top: 10px;
+    position: relative;
+}
+.skills-bar .bar span
+{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: var(--main-color);
+    border-radius: 25px;
+    box-shadow: var(--tex-color);
+
+}
+.skills-bar .bar .html
+{
+    width: 95%;
+    animation: html 2s;
+}
+.skills-bar .bar .css
+{
+    width: 80%;
+    animation: css 3s;
+}
+.skills-bar .bar .php
+{
+    width: 75%;
+    animation: php 4s;
+}
+.skills-bar .bar .JavaScript
+{
+    width: 60%;
+    animation: JavaScript 5s;
+}
+.skills-bar .bar .Java
+{
+    width: 50%;
+    animation: Java 4s;
+}
+.skills-bar .bar .figma
+{
+    width: 89%;
+    animation: figma 5s;
+}
+
+/* KEYFRAMES POUR LES SKILLS BAR  */
+/* @keyframes marph
+{
+    0%,
+    100%{
+        border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+    }
+    30%{
+        border-radius: 70% 30% 50% 50%/ 30% 30% 70% 70%;
+    }
+    60%{
+    border-radius :100% 60% 100% / 100% 100% 60% 60%;
+    }
+    80%{
+        border-radius:  69% 31% 66% 34% /21% 30% 70% 79%;
+    }
+} */
+ @keyframes html
+ {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 95%;
+    }
+ }
+
+ @keyframes css
+ {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+ }
+
+ @keyframes php
+ {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+ }
+
+ @keyframes JavaScript
+ {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+ }
+
+ @keyframes Java
+ {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+ }
+
+ @keyframes figma
+ {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 89%;
+    }
+ }
+
+
+/*FIN STYLE POUR SKILLS BAR */
+/* STYLE POUR RENDRE RESPONSIVE */
 
 @media (max-width: 991px){
     header{
@@ -516,6 +691,8 @@ span
 
 }
 
+
+
 @media (max-width: 617px) {
     .portfolio-container {
         grid-template-columns: 1fr;
@@ -547,119 +724,3 @@ span
 
 }
 
-
-
-
-
-/* Mettez ici les styles CSS communs pour toutes les tailles d'écran */
-
-/* Media query pour les écrans de 991px ou moins */
-/* @media (max-width: 991px){
-    header{
-        padding: 2rem 3%;
-    }
-    section{
-        padding: 10rem 3% 2rem;
-    }
-    .services{
-        padding-bottom: 7rem;
-    }
-    .contact {
-        min-height: auto;
-    }
-    footer{
-        padding: 2rem 3%;
-    }
-    .services{
-        padding-bottom: 7rem;
-    }
-} */
-
-/* Media query pour les écrans de 768px ou moins */
-/* @media (max-width: 768px){
-    #menu-icon {
-        display: block;
-    }
-    .navbar{
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 1rem 3%;
-        background: var(--bg-color);
-        border-top: 1rem solid rgba(0,0,0,.2);
-        box-shadow: 0.5rem 1rem rgba(0,0,0,.2);
-        display: none;
-    }
-    .navbar.active{
-        display: block;
-    }
-    .navbar a{
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-    }
-    .home {
-        flex-direction: column;
-    }
-    .home-content h3 {
-        font-size: 2.6rem;
-    }
-    .home-content h1 {
-        font-size: 5rem;
-    }
-    .home-img img {
-        width: 70vw;
-        margin-top: 4rem;
-    }
-    .about img{
-        flex-direction: column-reverse;
-        width: 70VW;
-        margin-top: 4rem;
-    }
-    .services h2{
-        margin-bottom: 3rem;
-    }
-    .portfolio h2 {
-        margin-bottom: 2rem;
-    }
-    .portfolio-container{
-        grid-template-columns: repeat(2, 1fr);
-    }
-} */
-
-/* Media query pour les écrans de 617px ou moins */
-/* @media (max-width: 617px) {
-    .portfolio-container {
-        grid-template-columns: 1fr;
-    }
-} */
-
-/* Media query pour les écrans de 450px ou moins */
-/* @media (max-width: 450px) {
-    .contact form input {
-        width: 100%;
-    }
-} */
-
-/* Media query pour les écrans de 375px ou moins */
-/* @media (max-width: 375px){
-    .home-img img{
-        width: 90vw;
-    }
-    .about-img img {
-        width: 90vw;
-    }
-    .about p {
-        width: 70vw;
-    }
-    .footer{
-        flex-direction: column-reverse;
-    }
-    .footer p{
-        align-items: center;
-        margin-top: 2rem;
-    }
-} */
-
-/* Ajoutez ici d'autres media queries si nécessaire pour des tailles d'écran spécifiques */
