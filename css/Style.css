@@ -691,10 +691,18 @@ span
         width: 70vw;
         margin-top: 4rem;
     }
+    .about{
+        width: 100%;      
+    }
     .about img{
         flex-direction: column-reverse;
-        width: 70VW;
+        width: 50VW;
         margin-top: 4rem;
+    }
+    .about-content{
+        padding: 8% ;
+        text-align: center!important;
+        font-size: 1.2rem;
     }
     .services h2{
         margin-bottom: 3rem;
@@ -720,16 +728,22 @@ span
     .contact form input {
         width: 100%;
     }
+    .about{
+        width: 100%;      
+    }
 }
 @media (max-width: 375px){
     .home-img img{
-        width: 90vw;
+        width: 70vw;
     }
     .about-img img {
         width: 90vw;
     }
+    .about{
+        width: 100%;      
+    }
     .about P {
-        width: 70vw;
+        width: 50vw;
     }
     .footer{
         flex-direction: column-reverse;
