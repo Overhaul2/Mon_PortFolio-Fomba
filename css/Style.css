@@ -537,6 +537,13 @@ span
     animation: figma 5s;
 }
 
+.skills-bar .bar .Wordpress
+{
+    width: 90%;
+    animation: figma 4s;
+}
+
+
 /* KEYFRAMES POUR LES SKILLS BAR  */
 /* @keyframes marph
 {
@@ -612,6 +619,16 @@ span
     100%{
         width: 89%;
     }
+ }
+    @keyframes Wordpress
+
+    {
+       0%{
+           width: 0%;
+       }
+       100%{
+           width: 90%;
+       }
  }
 
 
