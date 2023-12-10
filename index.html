@@ -42,7 +42,7 @@
                 <a href="#" id="instagram"><i class='bx bxl-instagram'></i></a>
 
             </div>
-            <a href="https://docs.google.com/document/d/1xI65soJSUF7aqPuSzxfsqr-UPZeYc_sD/edit?usp=sharing&ouid=100975135611053040024&rtpof=true&sd=true" class="btn">Download CV</a>
+            <a href="cv/CV_FOMBA_SOULEYMANE.pdf" class="btn">Télécharcger Mon CV</a>
         </div>
         <div class="home-img">
             <img src="img/home.png" alt="Photo Profile">
@@ -56,7 +56,7 @@
         </div>
         <div class="about-content">
             <h2 class="heading"> Appropos de <span>Moi</span></h2>
-            <h3>Developpeur Fulstack</h3>
+            <h3>Developpeur Full stack</h3>
             <p>
                 Travailler dans un environnement qui m’encourage
                 à réussir et à évoluer professionnellement, où je peux utiliser <br>
@@ -216,8 +216,28 @@
 
                 <div class="skills-bar">
                     <div class="skills-info">
+                        <p>TypeScript</p>
+                        <p>65%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="TypeScript"></span>
+                    </div>
+                </div>
+
+                <div class="skills-bar">
+                    <div class="skills-info">
+                        <p>Dart</p>
+                        <p>75%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="Dart"></span>
+                    </div>
+                </div>
+
+                <div class="skills-bar">
+                    <div class="skills-info">
                         <p>Java</p>
-                        <p>50%</p>
+                        <p>80%</p>
                     </div>
                     <div class="bar">
                         <span class="Java"></span>
@@ -304,19 +324,32 @@
     <!-- Sction contactez moi  -->
     <section class="contact" id="contact">
         <h2 class="heading">Contactez <span>Moi</span></h2>
-        <form action="https://formsubmit.co/Souleymane.fomba7578@gmail.com" method="post">
+        <form action="#">
             <div class="input-box">
-                <input type="text" placeholder="Nom Complet">
-                <input type="email" placeholder="Adress email">
+                <div class="input-box_fields">
+                    <input type="text" placeholder="Nom Complet" autocomplete="off" id="name" >
+                    <div class="text-error">Veiller sairsir votre nom Complet</div>
+                </div>
+                <div class="input-box_fields">
+                    <input type="email" placeholder="Adress email" autocomplete="off" id="email" >
+                    <div class="text-error">Veiller sairsir votre  adress email</div>
+                </div>
             </div>
 
             <div class="input-box">
-                <input type="number" placeholder="Numero de téléphone">
-                <input type="text" placeholder="Objet">
+                <div class="input-box_fields">
+                    <input type="number" placeholder="Numero de téléphone" autocomplete="off" id="tel" >
+                    <div class="text-error">Veiller sairsir votre numéro de téléphone</div>
+                </div>
+                <div class="input-box_fields">
+                    <input type="text" placeholder="Objet" autocomplete="off" id="Objet" >
+                    <div class="text-error">le champ objet est obligatoire</div>
+                </div>
             </div>
-            <textarea name="" id="" cols="25" rows="10" placeholder="Corp du message"></textarea>
-            <input type="submit" value="Envoyer" class="btn">
-            <input type="hidden" name="_next" value="https://votredomaine.co/merci.html">
+            <textarea name="" id="message" cols="25" rows="10" placeholder="Corp du message" ></textarea>
+            <div class="text-error">le Corp du message est obligatoire</div>
+            <button type="submit"  class="btn">Envoyer</button>
+            <!-- <input type="hidden" name="_next"> -->
         </form>
     </section>
     <!-- Fin section Contactez-moi  -->
@@ -335,5 +368,11 @@
     <!-- typed js   -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="js/script.js"></script>
+         <!-- smtp.com  -->
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/smtp.js"></script>
+
 </body>
 </html>

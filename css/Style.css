@@ -399,18 +399,18 @@ span
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.contact form .input-box input,
+.contact form .input-box .input-box_fields input,
 .contact form textarea
 {
     width: 100%;
-    font-size: 1.6rem;
+    font-size: 2rem;
     padding: 1.5rem;
     color: var(--tex-color);
     background: var(--bg-color);
-    border-radius: 2.8rem;
+    border-radius: 1.8rem;
     margin: .7rem 0;
 }
-.contact form .input-box input
+.contact form .input-box_fields input
 {
     width: 42%;
 }
@@ -422,6 +422,15 @@ span
 {
     cursor: pointer;
 }
+.contact form .text-error
+{
+    font-size: 1.2rem;
+    color: red;
+    text-align: left;
+    display: none;
+}
+
+/* Fin section contact  */
 .footer
 {
     background: var(--second-bg-color);
@@ -526,9 +535,20 @@ span
     width: 60%;
     animation: JavaScript 5s;
 }
+.skills-bar .bar .TypeScript
+{
+    width: 65%;
+    animation: TypeScript 3s;
+}
+
+.skills-bar .bar .Dart
+{
+    width: 75%;
+    animation: Dart 2s;
+}
 .skills-bar .bar .Java
 {
-    width: 50%;
+    width: 80%;
     animation: Java 4s;
 }
 .skills-bar .bar .figma
