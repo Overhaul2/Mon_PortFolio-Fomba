@@ -8,16 +8,15 @@ const message = document.getElementById("message");
 
 function sendEmail(){
 
-    const bodyMessage= `Full Name :${fullName.value}, <br> Email:${email.value},
-     <br> number: ${tel.value},  <br> Message:${message.value}`
-
+    const bodyMessage= `Nom complet:${fullName.value}, <br> Email:${email.value},
+     <br> Téléphone: ${tel.value},  <br> Message:${message.value}`
 
     Email.send({
         Host : "smtp.elasticemail.com",
         Username : "babalarab2012@gmail.com",
         Password : "76543A28BD5433A0DA94376F6788D72A6EEA",
         To : 'babalarab2012@gmail.com',
-        From : "babalarab2012@gmail.com",
+        From : email.value,
         Subject : Objet.value,
         Body : bodyMessage,
     }).then(
@@ -31,9 +30,25 @@ function sendEmail(){
         }
       }
     );
+
+    function validation(){
+        const items = document.querySelector(".item");
+        for(const item of items){
+            if(item.value ==""){
+                item.classList.add("error");
+                item.parentElement.classList.add("error");
+            }
+            item.addEventListener("keyup", ()=>{
+                if(item.value!= ""){
+                    item.classList.remove("error");
+                item.parentElement.classList.remove("error");
+                }else{}
+            })
+        }
+    }
 }
 
 form.addEventListener("submit", (e)=>{
     e.preventDefault;
-    sendEmail(); 
+    //sendEmail();
 });
